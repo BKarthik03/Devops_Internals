@@ -1,8 +1,9 @@
 pipeline {
-  agents any
+  agent any
   stages {
     stage('Check branch') {
       steps {
+        echo "Hello World"
         echo $(env.BRANCH_NAME)
       }
     }
