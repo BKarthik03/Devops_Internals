@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  env {
+  environment {
     BRANCH_NAME: 'dev'
   }
   stages {
