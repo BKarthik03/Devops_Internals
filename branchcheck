@@ -5,11 +5,11 @@ pipeline {
   }
   stages {
     stage('Check branch') {
-     
+      steps {
         if(env.BRANCH_NAME=='dev'){
           echo env.BRANCH_NAME
         }
-       
+       }
         
       
     }
