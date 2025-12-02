@@ -1,0 +1,17 @@
+pipeline {
+  agent any
+  environment {
+    BRANCH_NAME='dev'
+  }
+  stages {
+    stage('Check branch') {
+      steps {
+        
+          echo env.BRANCH_NAME=='dev'?'Developer':'Main Branch Build' 
+        
+       }
+        
+      
+    }
+  }
+}
