@@ -1,0 +1,9 @@
+pipeline {
+  stages {
+    stage('Check branch') {
+      steps {
+        echo "$(env.BRANCH_NAME)"
+      }
+    }
+  }
+}
